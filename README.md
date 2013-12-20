@@ -1,4 +1,4 @@
-Dedalus-to-DSPACE
+MARCXML-to-DSPACE
 =================
 
 Script utilizado para converter registros em formato MARCXML exportado do Aleph para importação no DSPACE
