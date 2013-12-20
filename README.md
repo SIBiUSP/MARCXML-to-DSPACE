@@ -6,4 +6,4 @@ Script utilizado para converter registros em formato MARCXML exportado do Aleph 
 
 Rodar antes:
 
-saxonb-xslt -xsl:dedalustodublincore.xsl -o:records.xml -s:NOMEDOARQUIVODODEDALUS.xml
+saxonb-xslt -xsl:dedalustodublincore.xsl -o:records.xml -s:NOMEDOARQUIVOMARCXML.xml
