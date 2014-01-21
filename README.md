@@ -5,14 +5,10 @@ Script utilizado para converter registros em formato MARCXML exportado do Aleph 
 
 Substituir no ARQUIVO.xml
 
-  <collection xmlns="http://www.loc.gov/MARC21/slim"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.loc.gov/MARC21/slim
-http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
-    <record xmlns="http://www.loc.gov/MARC21/slim"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.loc.gov/MARC21/slim
-http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+<collection xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+<record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
 
 por 
 
