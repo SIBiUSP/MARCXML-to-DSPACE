@@ -15,6 +15,7 @@ xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/
 por 
 
 //<collection>
+
 //<record>
  
 Então rodar:
@@ -24,4 +25,5 @@ saxonb-xslt -xsl:dedalustodublincore.xsl -o:records.xml -s:NOMEDOARQUIVOMARCXML.
 == Autores == 
 
 Jan Leduc de Lara
+
 Tiago R. Marçal Murakami
