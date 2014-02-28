@@ -20,3 +20,8 @@ por
 Então rodar:
 
 saxonb-xslt -xsl:dedalustodublincore.xsl -o:records.xml -s:NOMEDOARQUIVOMARCXML.xml
+
+== Autores == 
+
+Jan Leduc de Lara
+Tiago R. Marçal Murakami
