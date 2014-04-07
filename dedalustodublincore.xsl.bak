@@ -90,10 +90,6 @@
 					<xsl:when test="datafield[@tag='044']/subfield[@code='a']='my'"><dcvalue element="publisher" qualifier="pais" language="pt_BR">Malásia</dcvalue></xsl:when>
 					<xsl:when test="datafield[@tag='044']/subfield[@code='a']='pl'"><dcvalue element="publisher" qualifier="pais" language="pt_BR">Polônia</dcvalue></xsl:when>
 					<xsl:when test="datafield[@tag='044']/subfield[@code='a']='it'"><dcvalue element="publisher" qualifier="pais" language="pt_BR">Itália</dcvalue></xsl:when>
-					<xsl:when test="datafield[@tag='044']/subfield[@code='a']='ie'"><dcvalue element="publisher" qualifier="pais" language="pt_BR">Irlanda</dcvalue></xsl:when>
-					<xsl:when test="datafield[@tag='044']/subfield[@code='a']='ua'"><dcvalue element="publisher" qualifier="pais" language="pt_BR">Egito</dcvalue></xsl:when>
-					<xsl:when test="datafield[@tag='044']/subfield[@code='a']='xr'"><dcvalue element="publisher" qualifier="pais" language="pt_BR">República Checa</dcvalue></xsl:when>
-					<xsl:when test="datafield[@tag='044']/subfield[@code='a']='xx'"><dcvalue element="publisher" qualifier="pais" language="pt_BR">Sem local, desconhecido ou não determinado</dcvalue></xsl:when>
 					<xsl:otherwise><dcvalue element="publisher" qualifier="pais" language="pt_BR"><xsl:value-of select="datafield[@tag='044']/subfield[@code='a']" /></dcvalue></xsl:otherwise>
 				</xsl:choose>
 				<xsl:for-each select="datafield[@tag='510']">
