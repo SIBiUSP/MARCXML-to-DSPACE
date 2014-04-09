@@ -67,7 +67,7 @@
 				</xsl:if>
 				<xsl:for-each select="datafield[@tag='700']">
 					<xsl:if test="datafield[@tag='700']/subfield[@code='8']">
-						<dcvalue element="autor" qualifier="externo" language="pt_BR"><xsl:value-of select="datafield[@tag='100']/subfield[@code='a']" />; <xsl:value-of select="datafield[@tag='100']/subfield[@code='8']" /></dcvalue>
+						<dcvalue element="autor" qualifier="externo" language="pt_BR"><xsl:value-of select="datafield[@tag='700']/subfield[@code='a']" />; <xsl:value-of select="datafield[@tag='700']/subfield[@code='8']" /></dcvalue>
 					</xsl:if>
 				</xsl:for-each>
 				<dcvalue element="origem" qualifier="none" language="pt_BR">DEDALUS</dcvalue>
