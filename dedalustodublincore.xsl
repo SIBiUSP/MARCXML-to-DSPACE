@@ -113,7 +113,7 @@
 				</xsl:if>
 				<xsl:for-each select="datafield[@tag='700']">
 					<xsl:if test="datafield[@tag='700']/subfield[@code='8']">
-						<dcvalue element="cruesp" qualifier="" language="pt_BR"><xsl:value-of select="datafield[@tag='100']/subfield[@code='8']" /></dcvalue>
+						<dcvalue element="cruesp" qualifier="" language="pt_BR"><xsl:value-of select="datafield[@tag='700']/subfield[@code='8']" /></dcvalue>
 					</xsl:if>
 				</xsl:for-each>
 				<xsl:for-each select="datafield[@tag='590']/subfield[@code='n']">
