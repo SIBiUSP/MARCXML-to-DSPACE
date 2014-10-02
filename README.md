@@ -22,6 +22,8 @@ Então rodar:
 
 saxonb-xslt -xsl:dedalustodublincore.xsl -o:records.xml -s:NOMEDOARQUIVOMARCXML.xml
 
+./trataregistros.sh
+
 == Autores == 
 
 Jan Leduc de Lara
