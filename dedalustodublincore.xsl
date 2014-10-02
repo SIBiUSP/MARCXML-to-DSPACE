@@ -61,6 +61,7 @@
 			<dublin_core schema="usp">
 				<xsl:for-each select="datafield[@tag='946']">
 					<dcvalue element="autor" qualifier="" language="pt_BR"><xsl:value-of select="subfield[@code='a']" />::<xsl:value-of select="subfield[@code='b']" /></dcvalue>
+					<dcvalue element="mapeamento" qualifier="" language="pt_BR"><xsl:value-of select="subfield[@code='e']" />::<xsl:value-of select="subfield[@code='g']" /></dcvalue>
 				</xsl:for-each>
 				<xsl:if test="datafield[@tag='100']/subfield[@code='8']">
 					<dcvalue element="autor" qualifier="externo" language="pt_BR"><xsl:value-of select="datafield[@tag='100']/subfield[@code='a']" />; <xsl:value-of select="datafield[@tag='100']/subfield[@code='8']" /></dcvalue>
@@ -97,6 +98,7 @@
 					<xsl:otherwise><dcvalue element="publisher" qualifier="pais" language="pt_BR"><xsl:value-of select="datafield[@tag='044']/subfield[@code='a']" /></dcvalue></xsl:otherwise>
 				</xsl:choose>
 				<xsl:for-each select="datafield[@tag='510']">
+					<xsl:if test="subfield[@code='a']">
 					<dcvalue element="indexacao" qualifier="" language="pt_BR">
 						<xsl:analyze-string select="subfield[@code='a']" regex="(Indexado no )(.*)">
 							<xsl:matching-substring>
@@ -107,13 +109,14 @@
 							</xsl:non-matching-substring>
 						</xsl:analyze-string>
 					</dcvalue>
+					</xsl:if>
 				</xsl:for-each>
 				<xsl:if test="datafield[@tag='100']/subfield[@code='8']">
-					<dcvalue element="cruesp" qualifier="" language="pt_BR"><xsl:value-of select="datafield[@tag='100']/subfield[@code='8']" /></dcvalue>
+					<dcvalue element="colaboracao" qualifier="externa" language="pt_BR"><xsl:value-of select="datafield[@tag='100']/subfield[@code='8']" /></dcvalue>
 				</xsl:if>
 				<xsl:for-each select="datafield[@tag='700']">
 					<xsl:if test="subfield[@code='8']">
-						<dcvalue element="cruesp" qualifier="" language="pt_BR"><xsl:value-of select="subfield[@code='8']" /></dcvalue>
+						<dcvalue element="colaboracao" qualifier="externa" language="pt_BR"><xsl:value-of select="subfield[@code='8']" /></dcvalue>
 					</xsl:if>
 				</xsl:for-each>
 				<xsl:for-each select="datafield[@tag='590']/subfield[@code='n']">
