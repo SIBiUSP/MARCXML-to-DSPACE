@@ -24,6 +24,18 @@ saxonb-xslt -xsl:dedalustodublincore.xsl -o:records.xml -s:NOMEDOARQUIVOMARCXML.
 
 ./trataregistros.sh
 
+Testar a importação:
+
+./dspace import -t -a -e EMAIL -c HANDLE DA COLEÇÃO -s DIRETORIO DE ORIGEM -m MAPFILE (NOME) 
+
+Importar definitivamente: 
+
+./dspace import -a -e EMAIL -c HANDLE DA COLEÇÃO -s DIRETORIO DE ORIGEM -m MAPFILE (NOME)
+
+Importar para o workflow:
+
+./dspace import -w -a -e EMAIL -c HANDLE DA COLEÇÃO -s DIRETORIO DE ORIGEM -m MAPFILE (NOME)
+
 == Autores == 
 
 Jan Leduc de Lara
